@@ -1,62 +1,190 @@
-html {
+/* CSS for Tea Cozy project */
+
+/* global body styles */
+body {
+  margin: 0;
+  padding: 0;
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
   background-color: black;
-  opacity: .9;
+  opacity: 0.9;
   text-align: center;
 
 }
 
-header {
- height: 69px;
- width: 100%;
- border-bottom: 1px solid seashell;
- position: fixed;
- z-index: 5;
- justify-content: space-between;
-
+/*style for containers */
+.flex-container {
+ margin: 0px;
+ padding: 0px;
+ width: 1200px;
+ display: flex;
+ position: center;
 }
 
-header img {
-  height: 50px;
-  margin: 10px;
-  float: left;
-
-}
-
-header ul span {
-  display: inline;
-  text-decoration: underline;
-  padding: 10px;
-
-}
-
-header a {
-  color: seashell;
-}
-
-header nav {
-  float: right;
-}
-
-.main {
-  postion: center;
-  width: 1200px;
-  height: 700px;
-  background-image: url("images/img-mission-background.jpg");
-  display: flex;
-  top: 10px;
-  background-position: center;
+/* header style */
+#header {
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  display: fixed;
+  z-index: 5;
+  border-bottom: 1px solid seashell;
+  background-color: black;
+  height: 69px;
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
 }
 
-.main .mission {
+.logo {
+  height: 50px;
+  margin-left: 10px;
+  align-content: center;
+  align-items: flex-start;
+}
+
+.head {
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 0 10px;
+}
+
+.head a{
+  text-decoration: underline;
+  color: white;
+}
+
+/* Mission style */
+
+.main {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  width: 1200px;
+  height: 700px;
+  background-image: url("images/img-mission-background.jpg");
+  align-items: center;
+  display: flex;
+  }
+
+.main #mission {
   background-color: black;
   width: 100%;
+}
+
+#mission h2 h4{
+  background-color: black;
+  width: 1200px;
+  display: block;
+  position: absolute;
+  top: 300px;
+  text-align: center;
+  vertical-align: middle;
+  height: 50px;
 
 }
 
-.mission div {
+/*tea imgs */
+#featured  {
+  margin-left: 30px;
+  flex-direction: column;
+  align-items: center;
+  height: 770px;
+  width: 1200px;
+}
+
+#month h3 h4 {
+  margin-left: 30px;
+  padding: 0;
+  height: auto;
+  width: 1000px;
+  text-align: center;
+
+}
+
+#featured-teas {
+  margin: 0;
+  padding: 0;
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#featured-teas span {
+    display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+}
+
+.teas-img {
+  height: 200px;
+  width: 300px;
+  margin: 10px 15px;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+
+}
+
+/*locations */
+
+
+.location-box {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 500px;
+  background-image: url("images/img-locations-background.jpg");
+  align-items: center;
+  align-content: center;
+  margin-top: 70px;
+  margin-left: 30px;
+  padding-top: 70px;
+
+}
+
+#location-boxes {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container #locations h2 {
+  margin: 0 0 15px 0;
+ text-align: center;
+}
+
+.location-box {
+  display:  static;
+  opactiy: 1;
+  width: 300px;
+  height: 260px;
+  justify-content: center;
+  align-items: center;
   background-color: black;
+  margin: 0 20px;
+  padding-top: 30px;
+
+}
+
+/*footer */
+.footer #contact {
+  margin-left: 30px;
+  width: 1200px;
+  height: 200px;
+  text-align: center;
+
+}
+
+/*copyright */
+#copyright {
+    margin-left: 20px;
+  width: auto;
+  height: auto;
+  text-align: left;
+
 }
